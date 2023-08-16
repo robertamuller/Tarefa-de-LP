@@ -10,14 +10,11 @@ tres = um + dois
 tres = tres.reshape(2, int(a/2))
 tres = tres * 1.0
 tres = np.transpose(tres)
-print(tres)
-
 
 #3
 
 quatro = np.random.randint(0, 10, a).reshape(2, int(a/2))
 quatro = np.matmul(tres, quatro)
-print(quatro)
 
 #4
 
@@ -41,7 +38,6 @@ print(diferentes)
 #5
 
 sete = np.stack((quinto, sexto))
-print(sete)
 print(np.average(sete))
 print(np.std(sete))
 print(np.var(sete))
@@ -51,8 +47,6 @@ for i in range(0, 2):
             sete[i][j] = 1
         else:
             sete[i][j] = -1
-    
-print(sete)
 
 #6
 
